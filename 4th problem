@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+int n,i,j,a;
+cout<<"Enter your no.:";
+cin>>n;
+a=n;
+for(){
+c=a%10;
+
