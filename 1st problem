@@ -1,0 +1,11 @@
+#include<iosteam>
+using namespace std;
+int main{
+int n;
+cout<<"Enter your number:  \n";
+cin>>n;
+if n%2==0{
+cout<<"The number u have entered is even\n";
+}
+else{
+cout<<"The number u have entered is odd";
