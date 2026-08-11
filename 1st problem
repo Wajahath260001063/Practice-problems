@@ -1,4 +1,4 @@
-#include<iosteam>
+#include<iostream>
 using namespace std;
 int main{
 int n;
@@ -8,4 +8,4 @@ if n%2==0{
 cout<<"The number u have entered is even\n";
 }
 else{
-cout<<"The number u have entered is odd";
+cout<<"The number u have entered is odd";}
