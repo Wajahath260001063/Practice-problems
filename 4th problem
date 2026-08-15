@@ -1,10 +1,13 @@
 #include<iostream>
 using namespace std;
 int main(){
-int n,i,j,a;
+int n,a,c=0;
 cout<<"Enter your no.:";
 cin>>n;
-a=n;
-for(){
-c=a%10;
+//a=n;
+while(n>0){
+c=10*c+(n%10);
+n=n/10;
+}
+
 
