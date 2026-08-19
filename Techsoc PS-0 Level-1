@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+int main(){
+int C,N,W[100],T,A,H=0,L=T;
+cout<<"Enter total storage capacity:\n";
+cin>>C;
+cout<<"Enter total number of containers:\n";
+cin>>N;
+cout<<"Enter the weights of each container:\n";
+for(i=0;i<N;i++){
+cin>>W[i];
+T+=W[i];
+}
+A=T/N
+cout<<"Total shipment weight:"<<T<<endl;
+cout<<"Average Weight:"<<A<<endl;
+for(i=0;i<N;i++){
+if(W[i]>H){
+H=W[i];
+}
+else{
+continue;}
+}
+for(i=0;i<N;i++){
+if(W[i]<L){
+L=W[i]
+}
+}
+cout<<"Heaviest container weight:"<<H<<endl;
+cout<<"Lightest container weight:"<<L<<endl;
+if(T>=200){
+cout<<"Heavy"<<endl;}
+else{
+cout<<"Light"<<endl;
+}
+cout<<"Port capacity:"<<C<<endl;
+if(T<=C){
+cout<<"Shipment can be unloaded";
+}
+else{
+cout<<"Shipment exceeds port capacity!!!";
+}
+}
