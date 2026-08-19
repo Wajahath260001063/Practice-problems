@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-int C,N,W[100],T,A,H=0,L=T;
+int C,N,W[100],T,A,H=0,L,i;
 cout<<"Enter total storage capacity:\n";
 cin>>C;
 cout<<"Enter total number of containers:\n";
@@ -11,7 +11,8 @@ for(i=0;i<N;i++){
 cin>>W[i];
 T+=W[i];
 }
-A=T/N
+L=T;
+A=T/N;
 cout<<"Total shipment weight:"<<T<<endl;
 cout<<"Average Weight:"<<A<<endl;
 for(i=0;i<N;i++){
@@ -23,7 +24,7 @@ continue;}
 }
 for(i=0;i<N;i++){
 if(W[i]<L){
-L=W[i]
+L=W[i];
 }
 }
 cout<<"Heaviest container weight:"<<H<<endl;
