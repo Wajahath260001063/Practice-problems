@@ -1,1 +1,44 @@
+C = int(input("Enter total storage capacity:\n"))
+N = int(input("Enter total number of containers:\n"))
+
+W = []
+
+print("Enter the weights of each container:")
+T = 0
+
+for i in range(N):
+    weight = int(input())
+    W.append(weight)
+    T += weight
+
+L = T
+A = T // N
+
+print("Total shipment weight:", T)
+print("Average Weight:", A)
+
+H = 0
+for i in range(N):
+    if W[i] > H:
+        H = W[i]
+
+L = W[0]
+for i in range(N):
+    if W[i] < L:
+        L = W[i]
+
+print("Heaviest container weight:", H)
+print("Lightest container weight:", L)
+
+if T >= 200:
+    print("Heavy")
+else:
+    print("Light")
+
+print("Port capacity:", C)
+
+if T <= C:
+    print("Shipment can be unloaded")
+else:
+    print("Shipment exceeds port capacity!!!")
 
